@@ -1,0 +1,45 @@
+# Default model + provider (used by the CLI without --profile AND by the VS Code
+# Codex extension, which has no --profile selector). Mirrors astra.config.toml.
+model = "gpt-6-astra"
+model_provider = "foundry"
+model_reasoning_effort = "high"
+
+[model_providers.foundry]
+name = "Microsoft Foundry"
+# Foundry's /openai/v1 surface is self-versioned — no query_params api-version needed.
+base_url = "https://apprentice-ai.services.ai.azure.com/openai/v1"
+env_key = "AZURE_FOUNDRY_API_KEY"
+wire_api = "responses"
+requires_openai_auth = false
+request_max_retries = 6
+stream_max_retries = 10
+
+[windows]
+sandbox = "elevated"
+
+[projects.'c:\users\suashischakraborty\downloads\apprentice-wp']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\orches_mcpv1']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\orchestration_revamp\orches_mcpv1']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\learning_resources']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\rag_deepdive']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\apprentice-wp\apprentice']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\llm_fundamentals']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\system_design']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\agentic system design']
+trust_level = "trusted"

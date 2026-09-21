@@ -1,0 +1,18 @@
+model_provider = "azure"
+# This is the Azure DEPLOYMENT name, not necessarily the base model name.
+model = "gpt-5.6-terra"
+model_reasoning_effort = "low"
+web_search = "disabled"
+service_tier = "fast"
+
+[projects.'c:\users\nvsrsrujan\testing\auditaiagentskills']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty']
+trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.6-sol" = 4
+
+[windows]
+sandbox = "unelevated"

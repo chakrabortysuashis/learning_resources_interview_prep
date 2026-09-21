@@ -1,0 +1,22 @@
+model_provider = "foundry"
+model = "gpt-6-astra"
+model_reasoning_effort = "high"
+web_search = "disabled"
+
+[projects.'c:\users\nvsrsrujan\testing']
+trust_level = "trusted"
+
+[projects.'c:\users\nvsrsrujan']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\apprentice-wp\apprentice']
+trust_level = "trusted"
+
+[projects.'c:\users\suashischakraborty\downloads\orches_mcp']
+trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.6-sol" = 2
+
+[windows]
+sandbox = "unelevated"
